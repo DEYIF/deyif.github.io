@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 150px;
+            background-color: #4a4a4a;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-content {
+            flex-grow: 1;
+            background-color: #f0f8ff;
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
@@ -26,18 +45,59 @@
             font-size: 1.2em;
             margin-top: 0;
         }
-        .container {
-            background: #fff;
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .nav-button {
+            display: flex;
+            align-items: flex-start;
+            width: 95%;
+            padding: 15px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .github-button {
+            background-color: #24292e;
+        }
+        .github-button:hover {
+            background-color: #0366d6;
+        }
+        .bilibili-button {
+            background-color: #00a1d6;
+        }
+        .bilibili-button:hover {
+            background-color: #0086b3;
+        }
+        .nav-button i,
+        .nav-button svg {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+        }
+        .bilibili-icon {
+            fill: #ffffff;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to my homepage!</h1>
-        <p>This is deyif's personal website, publishing projects and anything interesting.</p>
+    <div class="sidebar">
+        <a href="https://github.com/DEYIF" class="nav-button github-button" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        <a href="https://space.bilibili.com/456201605?spm_id_from=333.788.0.0" class="nav-button bilibili-button" target="_blank">
+            <svg class="bilibili-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z"/>
+            </svg>
+            <span>Bilibili</span>
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Welcome to my homepage!</h1>
+            <p>This is deyif's personal website, publishing projects and anything interesting.</p>
+        </div>
     </div>
 </body>
 </html>
