@@ -1,103 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>邓羽丰的个人网站</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            min-height: 100vh;
-        }
-        .sidebar {
-            width: 150px;
-            background-color: #4a4a4a;
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .main-content {
-            flex-grow: 1;
-            background-color: #f0f8ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .container {
-            background: #fff;
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.2em;
-            margin-top: 0;
-        }
-        .nav-button {
-            display: flex;
-            align-items: flex-start;
-            width: 95%;
-            padding: 15px;
-            margin-bottom: 15px;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .github-button {
-            background-color: #24292e;
-        }
-        .github-button:hover {
-            background-color: #0366d6;
-        }
-        .bilibili-button {
-            background-color: #00a1d6;
-        }
-        .bilibili-button:hover {
-            background-color: #0086b3;
-        }
-        .nav-button i,
-        .nav-button svg {
-            margin-right: 8px;
-            width: 16px;
-            height: 16px;
-        }
-        .bilibili-icon {
-            fill: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="sidebar">
-        <a href="https://github.com/DEYIF" class="nav-button github-button" target="_blank">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
-        <a href="https://space.bilibili.com/456201605?spm_id_from=333.788.0.0" class="nav-button bilibili-button" target="_blank">
-            <svg class="bilibili-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z"/>
-            </svg>
-            <span>Bilibili</span>
-        </a>
-    </div>
-    <div class="main-content">
-        <div class="container">
-            <h1>Welcome to my homepage!</h1>
-            <p>This is deyif's personal website, publishing projects and anything interesting.</p>
+        <div class="profile">
+            <img src="img/avatar.jpg" alt="个人头像" class="avatar">
+            <h2>邓羽丰</h2>
+            <p>技术 | 游戏 | 音乐</p>
+        </div>
+        
+        <div class="nav-section">
+            <h3>个人主页</h3>
+            <a href="https://github.com/DEYIF" class="nav-button github-button" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://space.bilibili.com/456201605" class="nav-button bilibili-button" target="_blank">
+                <svg class="bilibili-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z"/>
+                </svg>
+                <span>Bilibili</span>
+            </a>
+            <a href="javascript:void(0);" class="nav-button team-button" id="wechat-btn">
+                <i class="fab fa-weixin"></i>
+                <span>微信公众号</span>
+            </a>
+        </div>
+        
+        <div class="nav-section">
+            <h3>团队主页</h3>
+            <a href="https://tofurd.github.io/" class="nav-button team-button" target="_blank">
+                <i class="fas fa-globe"></i>
+                <span>池骋未来</span>
+            </a>
+            <a href="javascript:void(0);" class="nav-button team-button" id="wechat-btn">
+                <i class="fab fa-weixin"></i>
+                <span>公众号</span>
+            </a>
+            <a href="#" class="nav-button team-button" target="_blank">
+                <i class="fab fa-bilibili"></i>
+                <span>b站</span>
+            </a>
+        </div>
+        
+        <div class="nav-section">
+            <h3>页面导航</h3>
+            <a href="#about" class="nav-button nav-local">
+                <i class="fas fa-user"></i>
+                <span>关于我</span>
+            </a>
+            <a href="#projects" class="nav-button nav-local">
+                <i class="fas fa-code-branch"></i>
+                <span>项目作品</span>
+            </a>
+            <a href="#skills" class="nav-button nav-local">
+                <i class="fas fa-laptop-code"></i>
+                <span>专业技能</span>
+            </a>
+            <a href="#education" class="nav-button nav-local">
+                <i class="fas fa-graduation-cap"></i>
+                <span>教育背景</span>
+            </a>
+            <a href="#awards" class="nav-button nav-local">
+                <i class="fas fa-award"></i>
+                <span>获奖情况</span>
+            </a>
         </div>
     </div>
+    
+    <div class="main-content">
+        <section id="about" class="card">
+            <h1>邓羽丰</h1>
+            <div class="section-content">
+                <div class="about-info">
+                    <p class="tagline">Web开发者 | 技术爱好者 | 创新者</p>
+                    <p>我是一名热爱技术的开发者，专注于前端和后端技术开发。欢迎来到我的个人网站，这里展示了我的项目和专业技能。</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> 邮箱：example@example.com</p>
+                        <p><i class="fas fa-phone"></i> 电话：+86 123 4567 8910</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 位置：中国</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>项目作品</h2>
+            <div class="section-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/project1.jpg" alt="项目1">
+                        </div>
+                        <div class="project-info">
+                            <h3>个人网站开发</h3>
+                            <p>使用HTML、CSS和JavaScript开发的响应式个人网站。</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">查看项目</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/project2.jpg" alt="项目2">
+                        </div>
+                        <div class="project-info">
+                            <h3>在线学习平台</h3>
+                            <p>基于Vue.js开发的在线课程学习平台，包含视频播放、课程管理等功能。</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">查看项目</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>专业技能</h2>
+            <div class="section-content">
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>前端开发</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>后端开发</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="card">
+            <h2>教育背景</h2>
+            <div class="section-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>计算机科学与技术学士</h3>
+                            <h4>某大学</h4>
+                            <p class="timeline-date">2016 - 2020</p>
+                            <p>主修课程：数据结构、算法分析、操作系统、计算机网络、数据库系统</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="card">
+            <h2>获奖情况</h2>
+            <div class="section-content">
+                <div class="awards-list">
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <div class="award-info">
+                            <h3>全国大学生计算机技能大赛三等奖</h3>
+                            <p>2019年</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-medal"></i>
+                        <div class="award-info">
+                            <h3>校园网页设计大赛一等奖</h3>
+                            <p>2018年</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 微信公众号二维码弹窗 -->
+    <div id="wechat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="qrcode-container">
+                <h3>扫描二维码关注微信公众号</h3>
+                <img src="img/wechat-qr.jpg" alt="微信公众号二维码" class="qrcode">
+                <p>或搜索公众号：<strong>示例公众号</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 邓羽丰. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
